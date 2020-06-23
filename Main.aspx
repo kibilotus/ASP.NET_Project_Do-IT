@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" Inherits="Main" %>
+<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Main.aspx.vb" Inherits="Main" %>
 
 <!DOCTYPE html>
 
@@ -48,11 +48,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Table ID="Table1" runat="server" >
+        <asp:Table ID="Table1" runat="server" width="100%" >
             <asp:TableRow>
                 <asp:TableCell ColumnSpan="2">
                         <div style="float: right;">
-                            <a href="~/login.aspx">로그인</a> / <a href="~/join.aspx">회원가입</a>  
+                            <a href="login.aspx">로그인</a> / <a href="~/join.aspx">회원가입</a>  
                         </div>
                 </asp:TableCell>
             </asp:TableRow>
@@ -64,10 +64,10 @@
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
-                <asp:TableCell>
-                    <div id="list">
-                        <asp:Menu ID="Mainmenu" runat="server" Orientation="Horizontal" DynamicMenuStyle-CssClass="dropdown-menu" >
-                            <DynamicMenuStyle CssClass="dropdown-menu" />
+                <asp:TableCell HorizontalAlign="Center">
+                    <div id="list" >
+                        <asp:Menu ID="Mainmenu" runat="server" Orientation="Horizontal"  >
+                            <StaticMenuStyle ForeColor="White" />
                             <Items>
                                 <asp:MenuItem Text="About 두잇" Value="About 두잇">
                                     <asp:MenuItem NavigateUrl="~/intro.aspx" Text="홈페이지 소개" Value="홈페이지 소개"></asp:MenuItem>
@@ -89,22 +89,34 @@
 
 
             <asp:TableRow>
-                <asp:TableCell>
-                            <asp:Image ImageUrl="imgs/banner1.jpg" runat="server" Width="100%" />
-                            <asp:Image ImageUrl="imgs/banner2.jpg" runat="server" Width="100%" />
-                            <asp:Image ImageUrl="imgs/banner3.jpg" runat="server" Width="100%" />
+                <asp:TableCell HorizontalAlign="Center">
+                            <asp:Image ImageUrl="imgs/banner.gif" runat="server" Width="90%" style="margin-top:30px"/>
                  </asp:TableCell>
             </asp:TableRow>
 
 
             <asp:TableRow>
                 <asp:TableCell>
-                    <div>
+                    <div style="margin-left:100px">
                         <h2>BEST 강의</h2>
                     </div>
                  </asp:TableCell>
             </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell HorizontalAlign="Center">
+                    <asp:Image ImageUrl="imgs/WP1.jpg" runat="server"/>
+                    <asp:Image ImageUrl="imgs/WP2.jpg" runat="server"/>
+                    <asp:Image ImageUrl="imgs/WP3.jpg" runat="server"/>
+                 </asp:TableCell>
+            </asp:TableRow>
 
+            <asp:TableRow>
+                <asp:TableCell HorizontalAlign="Center">
+                    <asp:Image ImageUrl="imgs/PL1.jpg" runat="server"/>
+                    <asp:Image ImageUrl="imgs/PL2.jpg" runat="server"/>
+                    <asp:Image ImageUrl="imgs/PL3.jpg" runat="server"/>
+                 </asp:TableCell>
+            </asp:TableRow>
 
             <asp:TableRow>
                 <asp:TableCell>
